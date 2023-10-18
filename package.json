@@ -1,8 +1,8 @@
 {
-  "name": "common-reactjs",
-  "version": "1.0.0",
+  "name": "nbl-common-reactjs",
+  "version": "1.0.3",
   "description": "common reactjs",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +11,24 @@
     "util",
     "reactjs"
   ],
-  "author": "Nguyen Ba Luan",
+  "author": {
+    "name": "Nguyen Ba Luan",
+    "email": "nbluan.20021996@gmail.com",
+    "url": "https://www.linkedin.com/in/nguyen-ba-luan/"
+  },
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyen-ba-luan/common-reactjs.git"
+  },
   "dependencies": {
     "lodash": "^4.17.21",
-    "ramda-adjunct": "^4.1.1"
+    "ramda": "^0.29.1",
+    "ramda-adjunct": "^4.1.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.199",
+    "@types/ramda": "^0.29.6"
   }
 }

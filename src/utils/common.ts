@@ -1,4 +1,4 @@
-import isNilOrEmpty from "ramda-adjunct/src/isNilOrEmpty";
+import { isNilOrEmpty } from "ramda-adjunct";
 import isNil from "ramda/src/isNil";
 import isEqual from "lodash/isEqual";
 
@@ -49,6 +49,7 @@ export const insertObjectIfElse = <T1, T2>(
 export const getUniqueListBy = <T>(array?: T[], key: string = "id") => {
   try {
     return [
+      // @ts-ignore
       ...new Map((array ?? []).map((item: T) => [item[key], item])).values(),
     ];
   } catch {
@@ -67,6 +68,7 @@ export const arrayToJson = <T>(
 
     const result = {};
     for (const item of array) {
+      // @ts-ignore
       result[item[key]] = item;
     }
 
